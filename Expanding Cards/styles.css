@@ -1,0 +1,61 @@
+body{
+  background-color: black;
+  text-align: center;
+}
+.card{
+  height: 600px;
+  width: 150px;
+  border-radius: 30px;
+}
+.card1{
+  background-image: url("images/img1.jpg");
+  display: inline-block;
+}
+.card2{
+  background-image: url("images/img2.jpg");
+  display: inline-block;
+}
+.card3{
+  background-image: url("images/img3.jpg");
+  display: inline-block;
+}
+.card4{
+  background-image: url("images/img4.jpg");
+  display: inline-block;
+}
+.card5{
+  background-image: url("images/img5.jpg");
+  display: inline-block;
+}
+.mainSection{
+  padding: 3%;
+}
+.card-active{
+  animation-name: anim1;
+  animation-duration: 1s;
+  width: 500px;
+}
+@keyframes anim1 {
+  from{
+    width: 150px;
+  }
+  to{
+    width: 500px;
+  }
+}
+.card:hover{
+  box-shadow: 10px 10px 20px grey;
+}
+.card-inactive{
+  animation-name: anim2;
+  animation-duration: 1s;
+  width: 150px;
+}
+@keyframes anim2 {
+  from{
+    width: 500px;
+  }
+  to{
+    width: 150px;
+  }
+}
